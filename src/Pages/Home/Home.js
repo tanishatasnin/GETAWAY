@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 const Home = () => {
                return (
                               <div>
-                                             <h1>home</h1>
+                                             
                                              
                                              <Banner></Banner>
                                              <About></About>

@@ -11,21 +11,19 @@ const Services = () => {
                               .then(data=>setServices(data))  
                       },[])
                return (
-                              <div className='services'>
-                                       <div className="container home ">
-                                                      {/* _______ all services dynamicly _  */}
-                                                    <h1 className='text-center m-4'>our service</h1>
-                              <div className=" row row-cols-1 row-cols-md-2">
-                                             {
-                                                    services.map(service=><Card
-                                                    service={service}>
-
-                                                    </Card>)        
-                                             }
-                              </div>
-                             
-                              </div>      
-                              </div>
+                    < div className='program-part'>
+                     <div className="our-programs">
+                         OUR Programs
+                     </div>
+                        <div className=" row row-cols-1 row-cols-md-2">
+                        {
+       services.map(service => <Card
+           key={service.id}
+           service={service}
+       ></Card>)
+   }
+                 </div>        
+                 </div>
                );
 };
 

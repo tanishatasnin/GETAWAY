@@ -12,7 +12,7 @@ const Header = () => {
   <div class="container ">
     <div class="logo-box ">
       <a href="/">
-        <img src=""/>
+        <img  src=""/>
       </a>
     </div>
     <nav>

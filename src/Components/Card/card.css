@@ -1,0 +1,30 @@
+/* ___________ Cards Css start hare _____  */
+
+.programs{
+               
+               
+    width: 580px;
+    height: 360px;
+               
+               
+margin:20px;
+           }
+           .program-text{
+               color: white;
+               padding: 20px;
+               background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+           }
+/* ____________________ responsive _________  */
+           @media screen and (max-width: 660px) {
+               div {text-align: center;
+               width: 100%;
+            margin-bottom: 30px;}
+               /* p{text-align: center;} */
+               .programs {
+                              width: 100%;
+                              height: 400px;
+               }
+               ul {float: none;}
+               nav li:first-of-type {margin-left: 0;}
+             }
+             /* _________ close _______  */

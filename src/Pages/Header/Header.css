@@ -46,6 +46,11 @@ body {
                color: #868686;
                text-transform: uppercase;
              }
+             .logo{
+               width: 50%;
+               height: 50%;
+
+             }
              nav a:after {
                content: "";
                width: 0;
