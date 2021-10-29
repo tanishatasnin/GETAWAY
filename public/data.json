@@ -1,0 +1,48 @@
+[{
+               "name":  "Cox-Bazar",
+               "price": "1400" ,
+               "follower":"657" ,
+               "img":  ""   ,
+               "text": "",
+               "For": "3-4 Days"
+},
+{
+               "name":  "Kuakata",
+               "price": "1300" ,
+               "follower":"569" ,
+               "img":  ""   ,
+               "text": "",
+               "For": "3-5 Days"
+},
+{
+               "name":  "Sundorbon",
+               "price": "4000" ,
+               "follower":"256" ,
+               "img":  ""   ,
+               "text": "",
+               "For": "7 Days"
+},
+{
+               "name":  "ranga-mati",
+               "price": "3400" ,
+               "follower":"700" ,
+               "img":  ""   ,
+               "text": "",
+               "For": "4-5 Days"
+},
+{
+               "name":  "",
+               "price": "" ,
+               "follower":"" ,
+               "img":  ""   ,
+               "text": "",
+               "For": ""
+},
+{
+               "name":  "",
+               "price": "" ,
+               "follower":"" ,
+               "img":  ""   ,
+               "text": "",
+               "For": ""
+}]
