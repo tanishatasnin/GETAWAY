@@ -15,6 +15,7 @@ import Header from './Pages/Header/Header';
 import AuthProvider, { AuthContext } from './Context/AuthProvider';
 import Footer from './Pages/Footer/Footer';
 import Faq from './Pages/Faq/faq';
+import AddPlaces from './Pages/AddPlaces/AddPlaces';
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route path='/faq'>
           <Faq></Faq>
+        </Route>
+        <Route path='/addplace'>
+          <AddPlaces></AddPlaces>
         </Route>
         <PrivateRoute path="/details">
 <Details></Details>
