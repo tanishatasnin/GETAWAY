@@ -43,11 +43,11 @@ const Footer = () => {
                     <div className="col-xl-4 col-lg-4 mb-50">
                         <div className="footer-widget">
                             <div className="footer-logo">
-                                <a href="index.html"><img src="https://wellbeing-spa.com/img/logo.svg" className="img-fluid" alt="logo"/></a>
+                            <h1 className="my-logo" >Getaway</h1>
+                                {/* <a href="index.html"><img src="" className="img-fluid" alt="logo"/></a> */}
                             </div>
                             <div className="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <h4>A Day Off for the Always On</h4>
                             </div>
                             <div className="footer-social-icon">
                                 <span>Follow us</span>

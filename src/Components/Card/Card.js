@@ -3,9 +3,9 @@ import './card.css';
 import { Link } from 'react-router-dom';
 
 const Card = ({service}) => {
-               const {id,price, follower,For, name,text, img } = service;
+               const {_id,price, follower,For, name,text, img } = service;
                return (
-                              <div>
+                              <div className="cardes">
                                        <div style={{ 
       backgroundImage: `url(${img})`
     }} className="img-fluid programs">
@@ -21,7 +21,7 @@ const Card = ({service}) => {
            </div>
 
             <p className="px-3">{}</p>
-            <Link to={`/moreinfo/${id}`}>
+            <Link to={`/booking/${_id}`}>
                 <button className="btn text-white fs-6 prgoram-text"> <i class="fas fa-info-circle"></i> BOOKING <i class="fas fa-angle-double-right"></i> </button>
             </Link>
 

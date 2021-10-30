@@ -11,6 +11,7 @@ const Header = () => {
                                              <header >
   <div class="container ">
     <div class="logo-box ">
+      <h1 className="my-logo" >Getaway</h1>
       <a href="/">
         <img  src=""/>
       </a>
@@ -18,13 +19,13 @@ const Header = () => {
     <nav>
     <ul>
       <li><Link to="">Home</Link></li>
-      <li><Link to="/details">Details</Link></li>
+      <li><Link to="/addplace">Add-New</Link></li>
       <li><Link to="/login">login</Link></li> 
       {/* ______ button for log out ____  */}
-      <span>{user.displayName}</span>
-      {user?.email &&  <button onClick={logOut}>Log out</button>}
+      <span className="logout-name">{user.displayName}</span>
+      {user?.email &&  <button className="log-out" onClick={logOut}>Log out</button>}
       {/* _____ close________  */}
-      <li><Link to="/information">Informations</Link></li>
+      <li><Link to="/manageall">Manage Services</Link></li>
       <li><Link to="/faq">FAQ</Link></li>
    </ul>
   </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import UseAuth from '../../Hooks/UseAuth';
 import './Login.css';
@@ -7,7 +8,7 @@ const Login = () => {
     const { signInUsingGoogle } = UseAuth();
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/shop';
+    const redirect_uri = location.state?.from || '/home';
 
 
     const handleGoogleLogin = () => {
@@ -21,19 +22,12 @@ const Login = () => {
         <div className="login-form">
             <div>
                 <h2>Login</h2>
-                <form>
-                    <input type="email" name="" id="" placeholder="Your Email" />
-                    <br />
-                    <input type="password" name="" id="" />
-                    <br />
-                    <input type="submit" value="Submit" />
-                </form>
-                <p>new to ema-john website? <Link to="/register">Create Account</Link></p>
-                <div>-------or----------</div>
+                
+                    
                 <button
-                    className="btn-regular"
+                    className="google-btn"
                     onClick={handleGoogleLogin}
-                >Google Sign In</button>
+                ><i className="fab fa-google-plus-g google-bg"></i> Google Sign In</button>
             </div>
         </div>
     );

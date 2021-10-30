@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
                return (
-                              <div>
+                              <div className=" container about">
                                              <div>
                                                <img className="about-img img-fluid" src="https://journal.getaway.house/wp-content/uploads/2021/10/hero_illo_lg.png" alt="" />             
                                              </div>

@@ -16,6 +16,8 @@ import AuthProvider, { AuthContext } from './Context/AuthProvider';
 import Footer from './Pages/Footer/Footer';
 import Faq from './Pages/Faq/faq';
 import AddPlaces from './Pages/AddPlaces/AddPlaces';
+import Booking from './Pages/Booking/Booking';
+import Manage from './Pages/Manage/Manage';
 function App() {
   return (
     <div className="App">
@@ -35,9 +37,16 @@ function App() {
         <Route path='/faq'>
           <Faq></Faq>
         </Route>
-        <Route path='/addplace'>
+        <PrivateRoute path="/manageall" >
+          <Manage></Manage>
+        </PrivateRoute>
+
+        <PrivateRoute path='/booking/:placeId'>
+          <Booking></Booking>
+        </PrivateRoute>
+        <PrivateRoute path='/addplace'>
           <AddPlaces></AddPlaces>
-        </Route>
+        </PrivateRoute>
         <PrivateRoute path="/details">
 <Details></Details>
         </PrivateRoute>

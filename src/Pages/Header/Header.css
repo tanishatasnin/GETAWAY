@@ -5,9 +5,23 @@ body {
              }
              header {
                padding: 20px 0;
-               background-color:white;
+               background-color:black;
                /* background: repeating-linear-gradient(45deg, #f0f2ed, #f0f2ed 20px, #f8f4eb 20px, #f8f4eb 40px); */
                box-shadow: 0 4px 6px rgba(0,0,0,.2);  
+             }
+             .logout-name{
+               margin-left: 20px;
+               color: brown;
+               
+             }
+             .log-out{
+               border-radius: 10px;
+               background-color: darkgray;
+             }
+             .my-logo{
+              color: brown;
+              font-family:Gabriola ;
+               
              }
              .container {
                padding: 0 20px;
