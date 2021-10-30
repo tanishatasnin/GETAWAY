@@ -6,7 +6,7 @@ const Services = () => {
                const [services ,setServices] =useState([])
 // _________________ data fetch _____________ 
                useEffect(()=>{
-                              fetch('./data.json')  
+                              fetch('http://localhost:5000/places')  
                               .then(res=>res.json())   
                               .then(data=>setServices(data))  
                       },[])
