@@ -6,7 +6,7 @@ const Booking = () => {
     const [place,setplace] = useState({})
 
 useEffect(()=>{
-    fetch(`http://localhost:5000/places/${placeId}`)
+    fetch(`https://protected-journey-97584.herokuapp.com/places/${placeId}`)
     .then(res=>res.json())
     .then(data=> setplace(data))
 },[])

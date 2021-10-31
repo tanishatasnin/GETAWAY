@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 const Manage = () => {
                const [services, setServices] = useState([]);
                useEffect(()=>{
-                              fetch('http://localhost:5000/places')
+                              fetch('https://protected-journey-97584.herokuapp.com/places')
                               .then(res=>res.json())
                               .then(data => setServices(data))
 
                },[])
                const handleDelete =id =>{
-                              const url =    `http://localhost:5000/places/${id}`;
+                              const url =    `https://protected-journey-97584.herokuapp.com/places/${id}`;
                               fetch(url,{
                                              method:'DELETE'
                               })
