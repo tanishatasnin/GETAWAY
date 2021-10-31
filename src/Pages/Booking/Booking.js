@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import './Bokkig.css';
 
 const Booking = () => {
                const { placeId } = useParams();
@@ -12,10 +13,16 @@ useEffect(()=>{
 },[])
 
                return (
-                              <div>
-                                     <div>
-            <h3>{place.name}</h3>
-            <h2>this is booking: {placeId}</h2>
+                              <div className='container'>
+                                     <div className="place-about">
+            <h3> <span className='The-Journal'>{place.name}</span></h3>
+            <img src={place.img} alt="" />
+            <br />
+            <br />
+            <h6>{place.text}</h6>
+            <br />
+            <br />
+            <br />
         </div>         
                               </div>
                );
