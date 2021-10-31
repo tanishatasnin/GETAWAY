@@ -10,12 +10,12 @@ const useFirebase = () => {
     const [loading, setLoading] = useState(true)
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
-
+// _______ sign in google _____ 
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider)
             .finally(() => { setLoading(false) });
     }
-
+// _________ log out_____ 
     const logOut = () => {
         setLoading(true);
         signOut(auth)
@@ -25,7 +25,7 @@ const useFirebase = () => {
             .finally(() => setLoading(false))
     }
 
-    // observe whether user auth state changed or not
+    // state changed or not
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -38,7 +38,7 @@ const useFirebase = () => {
         });
         return () => unsubscribe;
     }, [])
-
+// __________________ return ___________ 
     return {
         user,
         loading,

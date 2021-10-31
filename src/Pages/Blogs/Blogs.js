@@ -3,6 +3,7 @@ import './blog.css';
 
 const Blogs = () => {
                return (
+                //  __________________________ blog section __________ 
                               <div className='blogs container'>
                                              <div>
                                                  <h1>From our Blog <span className="The-Journal"> The Journal</span> </h1>    

@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 
 const Services = () => {
                const [services ,setServices] =useState([])
-// _________________ data fetch _____________ 
+// _________________ data fetch from mongodb  _____________ 
                useEffect(()=>{
                               fetch('https://protected-journey-97584.herokuapp.com/places')  
                               .then(res=>res.json())   

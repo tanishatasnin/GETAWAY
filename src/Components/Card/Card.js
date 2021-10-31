@@ -3,6 +3,7 @@ import './card.css';
 import { Link } from 'react-router-dom';
 
 const Card = ({service}) => {
+  // _________ data from mongodb _____ 
                const {_id,price, follower,For, name,text, img } = service;
                return (
                               <div className="cardes">
@@ -21,6 +22,7 @@ const Card = ({service}) => {
            </div>
 
             <p className="px-3">{}</p>
+            {/* ___ button ________  */}
             <Link to={`/booking/${_id}`}>
                 <button className="btn text-white fs-6 prgoram-text"> <i class="fas fa-info-circle"></i> BOOKING <i class="fas fa-angle-double-right"></i> </button>
             </Link>

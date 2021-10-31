@@ -18,6 +18,7 @@ import Faq from './Pages/Faq/faq';
 import AddPlaces from './Pages/AddPlaces/AddPlaces';
 import Booking from './Pages/Booking/Booking';
 import Manage from './Pages/Manage/Manage';
+import Notfound from './Pages/NotFound/Notfound';
 function App() {
   return (
     <div className="App">
@@ -50,6 +51,9 @@ function App() {
         <PrivateRoute path="/details">
 <Details></Details>
         </PrivateRoute>
+        <Route exact path='*'>
+          <Notfound></Notfound>
+        </Route>
       </Switch>
       <Footer></Footer>
       </BrowserRouter>

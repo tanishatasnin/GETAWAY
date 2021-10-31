@@ -5,12 +5,12 @@ import { useForm } from "react-hook-form";
 const AddPlaces = () => {
                const { register, handleSubmit,reset } = useForm();
                const onSubmit = data =>{
-                 
+                //  _________________ data from mongo db 
                               console.log(data);
                               axios.post('https://protected-journey-97584.herokuapp.com/places',data)
                               .then(res=>{
                                              if(res.data.insertedId){
-                                                            alert('add successfully');
+                                                            alert('added successfully');
                                                             reset();
                                              }
                               })
@@ -25,9 +25,9 @@ const AddPlaces = () => {
       <input {...register("img")} placeholder='image.png' />
 
       <br />
-      <input {...register("description")} placeholder='Description' />
+      <input {...register("description")} placeholder='Followers' />
       <br />
-      <input {...register("description")} placeholder='times' />
+      <input {...register("times")} placeholder='times' />
       <br />
       <input type="number" {...register("price")} placeholder='price' />
       <br />
